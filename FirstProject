@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UFT-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Feedback Survey</h1>
+  <p id="description">Through this survey, we aim to gain constructive feed to improve our quality of services.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label"> Name: <input type="text" id="name" placeholder="John Doe" required> </label>
+      <label id="email-label"> Email: <input type="email" id="email" placeholder="johndoe@gmai.com"required></label>
+      <label id="number-label">Age: <input type="number" id="number" min="0" max="120" placeholder="25"></label>
+      <label>
+        <legend>Rate us out of 5 </legend>
+        <select id="dropdown"> 
+          <option> Please Select Rating </option>
+          <option> 1 </option>
+          <option> 2 </option>
+          <option> 3 </option>
+          <option> 4 </option>
+          <option> 5 </option>
+        </select>
+      </label>
+      <label><legend>Will You Be Coming Back? </legend>
+       Yes <input type="radio" name="Yes" value="Yes" > No <input type="radio" name="No" value="No">
+      </label>
+      
+    </fieldset>
+  </form>
+</body>
+</html>
+-------------------
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Gorgia;
+  font-size: 20px;
+}
+fieldset {
+  border: none;
+  padding: 0px;
+  font-size: 20px
+}
+label {
+  display: block;
+  padding: 40px;
+}
+label:last-of-type {
+ margin-top: 0px;
+
+}
